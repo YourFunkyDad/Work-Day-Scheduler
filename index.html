@@ -27,10 +27,12 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <div id="digital-clock"></div>
+      <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
 
-      <!-- Timeblocks go here -->
+
+<!--TimeBlocks-->
+    <div class="container">
       <div id="hour0" class="row time-block">
         <div class="col-md-1 hour">
           12:00 AM
@@ -39,7 +41,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour1" class="row time-block">
         <div class="col-md-1 hour">
           1:00 AM
         </div>
@@ -47,7 +49,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour2" class="row time-block">
         <div class="col-md-1 hour">
           2:00 AM
         </div>
@@ -55,7 +57,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour3" class="row time-block">
         <div class="col-md-1 hour">
           3:00 AM
         </div>
@@ -63,7 +65,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour4" class="row time-block">
         <div class="col-md-1 hour">
           4:00 AM
         </div>
@@ -71,7 +73,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour5" class="row time-block">
         <div class="col-md-1 hour">
           5:00 AM
         </div>
@@ -79,7 +81,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
       
-      <div id="hour0" class="row time-block">
+      <div id="hour6" class="row time-block">
         <div class="col-md-1 hour">
           6:00 AM
         </div>
@@ -87,7 +89,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour7" class="row time-block">
         <div class="col-md-1 hour">
           7:00 AM
         </div>
@@ -95,7 +97,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour8" class="row time-block">
         <div class="col-md-1 hour">
           8:00 AM
         </div>
@@ -103,7 +105,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour9" class="row time-block">
         <div class="col-md-1 hour">
           9:00 AM
         </div>
@@ -111,7 +113,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour10" class="row time-block">
         <div class="col-md-1 hour">
           10:00 AM
         </div>
@@ -119,7 +121,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour11" class="row time-block">
         <div class="col-md-1 hour">
           11:00 AM
         </div>
@@ -127,7 +129,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour12" class="row time-block">
         <div class="col-md-1 hour">
           12:00 PM
         </div>
@@ -135,7 +137,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour13" class="row time-block">
         <div class="col-md-1 hour">
           1:00 PM
         </div>
@@ -143,7 +145,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour14" class="row time-block">
         <div class="col-md-1 hour">
           2:00 PM
         </div>
@@ -151,7 +153,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour15" class="row time-block">
         <div class="col-md-1 hour">
           3:00 PM
         </div>
@@ -159,7 +161,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour16" class="row time-block">
         <div class="col-md-1 hour">
           4:00 PM
         </div>
@@ -167,7 +169,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour17" class="row time-block">
         <div class="col-md-1 hour">
           5:00 PM
         </div>
@@ -175,7 +177,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour18" class="row time-block">
         <div class="col-md-1 hour">
           6:00 PM
         </div>
@@ -183,7 +185,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour19" class="row time-block">
         <div class="col-md-1 hour">
           7:00 PM
         </div>
@@ -191,7 +193,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour20" class="row time-block">
         <div class="col-md-1 hour">
           8:00 PM
         </div>
@@ -199,7 +201,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour21" class="row time-block">
         <div class="col-md-1 hour">
           9:00 PM
         </div>
@@ -207,7 +209,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour22" class="row time-block">
         <div class="col-md-1 hour">
           10:00 PM
         </div>
@@ -215,7 +217,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="hour0" class="row time-block">
+      <div id="hour23" class="row time-block">
         <div class="col-md-1 hour">
           11:00 PM
         </div>
