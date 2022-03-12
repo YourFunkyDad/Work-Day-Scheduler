@@ -1,41 +1,44 @@
 // Clock Function
 
-setInterval(function(){
-    currentTime = getDateTime();
-    document.getElementById("digital-clock").innerHTML = currentTime;
-}, 1000);
+// setInterval(function(){
+//     currentTime = getDateTime();
+//     document.getElementById("digital-clock").innerHTML = currentTime;
+// }, 1000);
 
-function getDateTime() {
-    var now     = new Date(); 
-    var month   = now.getMonth()+1; 
-    var day     = now.getDate();
-    var year    = now.getFullYear();
-    var hour    = now.getHours();
-    var minute  = now.getMinutes();
-    var second  = now.getSeconds(); 
-    if(month.toString().length == 1) {
-         month = '0'+month;
-    }
-    if(day.toString().length == 1) {
-         day = '0'+day;
-    }   
-    if(hour.toString().length == 1) {
-         hour = '0'+hour;
-    }
-    if(minute.toString().length == 1) {
-         minute = '0'+minute;
-    }
-    if(second.toString().length == 1) {
-         second = '0'+second;
-    }   
-    var dateTime = month+'/'+day+'/'+year+' '+hour+':'+minute+':'+second;   
-     return dateTime;
-}
+// function getDateTime() {
+//     var now     = new Date(); 
+//     var month   = now.getMonth()+1; 
+//     var day     = now.getDate();
+//     var year    = now.getFullYear();
+//     var hour    = now.getHours();
+//     var minute  = now.getMinutes();
+//     var second  = now.getSeconds(); 
+//     if(month.toString().length == 1) {
+//          month = '0'+month;
+//     }
+//     if(day.toString().length == 1) {
+//          day = '0'+day;
+//     }   
+//     if(hour.toString().length == 1) {
+//          hour = '0'+hour;
+//     }
+//     if(minute.toString().length == 1) {
+//          minute = '0'+minute;
+//     }
+//     if(second.toString().length == 1) {
+//          second = '0'+second;
+//     }   
+//     var dateTime = month+'/'+day+'/'+year+' '+hour+':'+minute+':'+second;   
+//      return dateTime;
+// }
 
 $(document).ready(function () {
-    $(".saveBtn").on("click", function() {
-        var text = $(this).siblings(".description").val();
+    $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
+    $(".saveBtn").on("click", function () {
+        console.log(this);
+        var text = $(this).siblings(".description").val(); 
         var time = $(this).parent().attr("id");
+
 
         localStorage.setItem(time, text);
     })
