@@ -5,7 +5,7 @@ body {
     background-color: blanchedalmond;
   }
   
-  textarea{
+  textarea {
     background: transparent;
     border: none;
     resize: none;
@@ -77,6 +77,8 @@ body {
     border-style: solid;
     border-color: black;
     max-height:min-content;
+    padding: 15px;
+    margin-bottom: 25px;
   }
 
   .date-box {
@@ -87,4 +89,11 @@ body {
     background-color: #ff6961;
     color: white;
     font-family: 'Courier New', Courier, monospace;
+  }
+
+  .feet {
+    
+    background-color: black;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
