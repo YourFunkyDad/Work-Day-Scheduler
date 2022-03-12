@@ -2,6 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
+    background-color: blanchedalmond;
   }
   
   textarea{
@@ -75,4 +76,15 @@ body {
     border-width: 2px;
     border-style: solid;
     border-color: black;
+    max-height:min-content;
+  }
+
+  .date-box {
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: #ff6961;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
   }
